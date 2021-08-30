@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Vazir',sans-serif;
+    line-height: 1.6;
+}
+
+
+.container{
+    margin-top: 5%;
+    flex-direction: column;
+    height: 50%;
+}
+.card{
+    border: 0px #000 solid;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    height: 50%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.5rem;
+    background-color: rebeccapurple;
+    color: #fff;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.messages{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    max-height: 500px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.message{
+    padding: 10px 10px;
+}
+
+.user-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+textarea{
+    width: 70%;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 17px;
+    font-family: 'Vazir',sans-serif;
+}
+
+.btn{
+    margin: 10px 0;
+    display: inline-block;
+    padding: 0px 30px;
+    cursor: pointer;
+    background: rebeccapurple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    font-size: 16px;
+    font-family: 'Vazir',sans-serif;
+    
+}
+
+
+@media screen and (max-width:768px) {
+
+    .container{
+        margin-top: 10%;
+    }
+    
+}
